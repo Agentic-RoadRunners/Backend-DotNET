@@ -10,6 +10,7 @@
     <RepositoryType>Public</RepositoryType>
     <PackageProjectUrl>https://www.codewithmukesh.com/project/aspnet-core-webapi-clean-architecture/</PackageProjectUrl>
     <Version>1.1.0</Version>
+    <UserSecretsId>2993b7ba-028e-4d8a-b757-43a1d7e1dc2f</UserSecretsId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>SafeRoad.WebApi.xml</DocumentationFile>
@@ -35,8 +36,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SafeRoad.Application\SafeRoad.Core.csproj" />
-    <ProjectReference
-      Include="..\SafeRoad.Infrastructure\SafeRoad.Infrastructure.csproj" />
+    <ProjectReference Include="..\SafeRoad.Infrastructure\SafeRoad.Infrastructure.csproj" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
