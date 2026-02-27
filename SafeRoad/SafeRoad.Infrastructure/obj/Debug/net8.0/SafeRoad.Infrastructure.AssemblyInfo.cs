@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SafeRoad.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0+00a66a9bc77c41b821311fae7ae77d1f168b418c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0+4b213297694bfa09a5c7f1ad17f559e07774043d")]
 [assembly: System.Reflection.AssemblyProductAttribute("SafeRoad.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SafeRoad.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]
