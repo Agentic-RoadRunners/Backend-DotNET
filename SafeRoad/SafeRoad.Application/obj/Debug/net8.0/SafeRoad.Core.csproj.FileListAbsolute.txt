@@ -1,0 +1,13 @@
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/bin/Debug/net8.0/SafeRoad.Core.deps.json
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/bin/Debug/net8.0/SafeRoad.Core.dll
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/bin/Debug/net8.0/SafeRoad.Core.pdb
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.csproj.AssemblyReference.cache
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.AssemblyInfoInputs.cache
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.AssemblyInfo.cs
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.csproj.CoreCompileInputs.cache
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.sourcelink.json
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.dll
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/refint/SafeRoad.Core.dll
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.pdb
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/ref/SafeRoad.Core.dll

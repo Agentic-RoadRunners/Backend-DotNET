@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UM3N1lpLjYFpJlzkkxIpunfdBHFUd69ujfya6wJHxLQ=",
+  "Source": "SafeRoad.WebApi",
+  "BasePath": "_content/SafeRoad.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

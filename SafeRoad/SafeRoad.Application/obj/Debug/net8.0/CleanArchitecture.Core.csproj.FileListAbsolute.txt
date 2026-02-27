@@ -1,0 +1,13 @@
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.csproj.AssemblyReference.cache
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.AssemblyInfoInputs.cache
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.AssemblyInfo.cs
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.csproj.CoreCompileInputs.cache
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.sourcelink.json
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Core.deps.json
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Core.dll
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/bin/Debug/net8.0/CleanArchitecture.Core.pdb
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.dll
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/refint/CleanArchitecture.Core.dll
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/CleanArchitecture.Core.pdb
+/Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/CleanArchitecture/CleanArchitecture.Application/obj/Debug/net8.0/ref/CleanArchitecture.Core.dll

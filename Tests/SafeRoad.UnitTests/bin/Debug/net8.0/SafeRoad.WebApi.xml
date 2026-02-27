@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SafeRoad.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:SafeRoad.WebApi.Controllers.AnalyticsController">
+            <summary>
+            Platform-wide analytics and statistics
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AnalyticsController.GetOverview">
+            <summary>
+            Get platform-wide overview statistics
+            </summary>
+            <returns>Total incidents, total users, resolved count, municipality count</returns>
+            <response code="200">Returns the analytics overview</response>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.AuthController">
+            <summary>
+            Authentication — register and login
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AuthController.Register(SafeRoad.Core.Features.Auth.Commands.Register.RegisterCommand)">
+            <summary>
+            Register a new user account
+            </summary>
+            <param name="command">Registration details (email, password, full name)</param>
+            <returns>User info and JWT access token</returns>
+            <response code="200">Registration successful — returns token</response>
+            <response code="400">Email already exists or validation error</response>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AuthController.Login(SafeRoad.Core.Features.Auth.Commands.Login.LoginCommand)">
+            <summary>
+            Login with email and password
+            </summary>
+            <param name="command">Login credentials (email, password)</param>
+            <returns>User info and JWT access token</returns>
+            <response code="200">Login successful — returns token</response>
+            <response code="400">Invalid email or password</response>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AuthController.Logout">
+            <summary>
+            Logout — removes device tokens and invalidates session
+            </summary>
+            <remarks>
+            Client must discard the JWT token after calling this endpoint.
+            Since JWT is stateless, the token remains technically valid until expiration,
+            but device tokens are removed to stop push notifications.
+            </remarks>
+            <response code="200">Logout successful</response>
+            <response code="401">Not authenticated</response>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.CommentController">
+            <summary>
+            Comment management — add, list, and delete comments on incidents
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.CommentController.Create(System.Guid,SafeRoad.Core.DTOs.Comment.CreateCommentRequest)">
+            <summary>
+            Add a comment to an incident
+            </summary>
+            <response code="200">Comment created successfully</response>
+            <response code="400">Validation error</response>
+            <response code="404">Incident not found</response>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.CommentController.GetByIncident(System.Guid,System.Int32,System.Int32)">
+            <summary>
+            Get all comments for an incident (paginated)
+            </summary>
+            <response code="200">List of comments</response>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.CommentController.Delete(System.Guid,System.Int32)">
+            <summary>
+            Delete your own comment
+            </summary>
+            <response code="200">Comment deleted</response>
+            <response code="400">Cannot delete</response>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.HealthController">
+            <summary>
+            System health checks
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.HealthController.Get">
+            <summary>
+            Check if the API is running
+            </summary>
+            <returns>Health status and timestamp</returns>
+            <response code="200">API is healthy</response>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.IncidentCategoryController">
+            <summary>
+            Incident categories — list all available incident types
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentCategoryController.GetAll">
+            <summary>
+            Get all incident categories
+            </summary>
+            <response code="200">List of incident categories</response>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.IncidentController">
+            <summary>
+            Incident management — create, query, update, and delete traffic incidents
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.Create(SafeRoad.Core.DTOs.Incident.CreateIncidentRequest)">
+            <summary>
+            Report a new traffic incident
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get all incidents (paginated)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.GetNearby(System.Double,System.Double,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get nearby incidents based on location
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.GetById(System.Guid)">
+            <summary>
+            Get incident details by ID
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.GetMy(System.Int32,System.Int32)">
+            <summary>
+            Get incidents reported by the authenticated user
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.UpdateStatus(System.Guid,SafeRoad.Core.Features.Incidents.Commands.UpdateIncidentStatus.UpdateIncidentStatusCommand)">
+            <summary>
+            Update incident status (Admin/Moderator only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.Delete(System.Guid)">
+            <summary>
+            Delete an incident (owner only)
+            </summary>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.UserController">
+            <summary>
+            User profile management — view, update profile, change password, and statistics
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserController.GetMyProfile">
+            <summary>
+            Get your own profile
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserController.UpdateProfile(SafeRoad.Core.DTOs.User.UpdateProfileRequest)">
+            <summary>
+            Update your profile (name, avatar)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserController.ChangePassword(SafeRoad.Core.DTOs.User.ChangePasswordRequest)">
+            <summary>
+            Change your password
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserController.GetMyStats">
+            <summary>
+            Get your personal statistics (total incidents, comments, verifications, trust score)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserController.GetPublicProfile(System.Guid)">
+            <summary>
+            Get a user's public profile
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserController.GetTrustScore(System.Guid)">
+            <summary>
+            Get a user's trust score
+            </summary>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.UserJourneyController">
+            <summary>
+            User journeys — start a trip with route calculation and incident warnings, end trip with report prompt
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.Preview(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Preview route + incidents WITHOUT starting a journey (no auth required for preview)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.Start(SafeRoad.Core.DTOs.UserJourney.StartJourneyRequest)">
+            <summary>
+            Start a new journey — calculates route and returns incidents along the way
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.End">
+            <summary>
+            End the active journey — asks user if they saw any incidents
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.GetActive">
+            <summary>
+            Get your currently active journey
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.GetAll(System.Int32,System.Int32)">
+            <summary>
+            Get all your past journeys (paginated)
+            </summary>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.VerificationController">
+            <summary>
+            Incident verification — verify, dispute, and manage votes
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.VerificationController.Verify(System.Guid)">
+            <summary>
+            Verify an incident (upvote)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.VerificationController.Dispute(System.Guid)">
+            <summary>
+            Dispute an incident (downvote)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.VerificationController.RemoveVote(System.Guid)">
+            <summary>
+            Remove your vote from an incident
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.VerificationController.GetVerifications(System.Guid)">
+            <summary>
+            Get all verifications for an incident
+            </summary>
+        </member>
+        <member name="T:SafeRoad.WebApi.Controllers.WatchedAreaController">
+            <summary>
+            Watched areas — manage regions you want to monitor for new incidents
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.WatchedAreaController.GetAll">
+            <summary>
+            Get all your watched areas
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.WatchedAreaController.Create(SafeRoad.Core.DTOs.WatchedArea.CreateWatchedAreaRequest)">
+            <summary>
+            Add a new watched area (name, center point, radius)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.WatchedAreaController.Update(System.Int32,SafeRoad.Core.DTOs.WatchedArea.UpdateWatchedAreaRequest)">
+            <summary>
+            Update a watched area
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.WatchedAreaController.Delete(System.Int32)">
+            <summary>
+            Delete a watched area
+            </summary>
+        </member>
+        <member name="T:SafeRoad.WebApi.Swagger.EnumSchemaFilter">
+            <summary>
+            Appends human-readable enum member names to every enum schema
+            so Swagger UI shows "0 = Pending, 1 = Verified, …" instead of bare integers.
+            </summary>
+        </member>
+        <member name="T:SafeRoad.WebApi.Swagger.SwaggerExampleSchemaFilter">
+            <summary>
+            Populates the "Example Value" section in Swagger UI with realistic,
+            pre-filled JSON for every request and response schema.
+            </summary>
+        </member>
+    </members>
+</doc>
