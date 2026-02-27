@@ -11,3 +11,16 @@
 /Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/refint/SafeRoad.Core.dll
 /Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.pdb
 /Users/hakanberkiten/Desktop/SafeRoads/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/ref/SafeRoad.Core.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/bin/Debug/net8.0/SafeRoad.Core.deps.json
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/bin/Debug/net8.0/SafeRoad.Core.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/bin/Debug/net8.0/SafeRoad.Core.pdb
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.csproj.AssemblyReference.cache
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.AssemblyInfoInputs.cache
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.AssemblyInfo.cs
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.csproj.CoreCompileInputs.cache
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.sourcelink.json
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/refint/SafeRoad.Core.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/SafeRoad.Core.pdb
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Application/obj/Debug/net8.0/ref/SafeRoad.Core.dll

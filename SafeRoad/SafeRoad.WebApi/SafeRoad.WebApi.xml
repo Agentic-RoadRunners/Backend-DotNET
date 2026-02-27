@@ -180,11 +180,6 @@
             User journeys — start a trip with route calculation and incident warnings, end trip with report prompt
             </summary>
         </member>
-        <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.Preview(System.Double,System.Double,System.Double,System.Double)">
-            <summary>
-            Preview route + incidents WITHOUT starting a journey (no auth required for preview)
-            </summary>
-        </member>
         <member name="M:SafeRoad.WebApi.Controllers.UserJourneyController.Start(SafeRoad.Core.DTOs.UserJourney.StartJourneyRequest)">
             <summary>
             Start a new journey — calculates route and returns incidents along the way
