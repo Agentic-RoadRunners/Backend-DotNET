@@ -1,8 +1,9 @@
 
 namespace SafeRoad.Core.Settings;
 
-public class BlobStorageSettings
+public class SupabaseStorageSettings
 {
-    public string ConnectionString { get; set; } = null!;
-    public string ContainerName { get; set; } = "incident-photos";
+    public string SupabaseUrl { get; set; } = null!;
+    public string SupabaseServiceKey { get; set; } = null!;
+    public string BucketName { get; set; } = "incident-photos";
 }
