@@ -310,8 +310,6 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/SafeRoad.WebApi.pdb
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/SafeRoad.WebApi.xml
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/AutoMapper.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Azure.Core.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Azure.Identity.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/BCrypt.Net-Next.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/FluentValidation.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
@@ -341,7 +339,6 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.CodeAnalysis.Razor.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.CodeAnalysis.Scripting.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Data.SqlClient.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.DiaSymReader.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.DotNet.Scaffolding.Shared.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
@@ -349,8 +346,6 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
@@ -360,8 +355,6 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Identity.Client.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.Identity.Client.Extensions.Msal.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
@@ -370,7 +363,6 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.NET.StringTools.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.SqlServer.Server.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/dotnet-aspnet-codegenerator-design.dll
@@ -382,7 +374,6 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/MimeKit.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Mono.TextTemplating.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/NetTopologySuite.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/NetTopologySuite.IO.SqlServerBytes.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/NuGet.Common.dll
@@ -407,12 +398,10 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Serilog.Sinks.Console.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Serilog.Sinks.Debug.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Serilog.Sinks.File.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Serilog.Sinks.MSSqlServer.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Serilog.Sinks.PeriodicBatching.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.ClientModel.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.CodeDom.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Composition.AttributedModel.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Composition.Convention.dll
@@ -422,9 +411,7 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Drawing.Common.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Memory.Data.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Reflection.MetadataLoadContext.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Runtime.Caching.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Security.Permissions.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/System.Windows.Extensions.dll
@@ -567,15 +554,8 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Drawing.Common.dll
-/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Security.Cryptography.ProtectedData.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/runtimes/win/lib/net7.0/System.Windows.Extensions.dll
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/SafeRoad.Core.dll
@@ -604,3 +584,9 @@
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/obj/Debug/net8.0/SafeRoad.WebApi.pdb
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/obj/Debug/net8.0/SafeRoad.WebApi.genruntimeconfig.cache
 /Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/obj/Debug/net8.0/ref/SafeRoad.WebApi.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/NetTopologySuite.IO.PostGis.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Npgsql.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Npgsql.NetTopologySuite.dll
+/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.WebApi/bin/Debug/net8.0/Serilog.Sinks.PostgreSQL.dll
