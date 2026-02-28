@@ -10,8 +10,8 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.EntityFrameworkCore.Design.DesignTimeServicesReferenceAttribute("Microsoft.EntityFrameworkCore.SqlServer.Design.Internal.SqlServerNetTopologySuite" +
-    "DesignTimeServices, Microsoft.EntityFrameworkCore.SqlServer.NetTopologySuite", "Microsoft.EntityFrameworkCore.SqlServer")]
+[assembly: Microsoft.EntityFrameworkCore.Design.DesignTimeServicesReferenceAttribute("Npgsql.EntityFrameworkCore.PostgreSQL.Design.Internal.NpgsqlNetTopologySuiteDesig" +
+    "nTimeServices, Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite", "Npgsql.EntityFrameworkCore.PostgreSQL")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
 
