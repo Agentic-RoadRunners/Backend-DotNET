@@ -10,6 +10,7 @@ using SafeRoad.Core.Features.Incidents.Queries.GetAllIncidents;
 using SafeRoad.Core.Features.Incidents.Queries.GetIncidentById;
 using SafeRoad.Core.Features.Incidents.Queries.GetMyIncidents;
 using SafeRoad.Core.Features.Incidents.Queries.GetNearbyIncidents;
+using SafeRoad.Core.Features.Incidents.Queries.GetByMunicipality;
 using SafeRoad.WebApi.Services;
 
 namespace SafeRoad.WebApi.Controllers;
@@ -122,10 +123,26 @@ public class IncidentController : ControllerBase
     }
 
     /// <summary>
-    /// Update incident status (Admin/Moderator only)
+    /// Get incidents by municipality
+    /// </summary>
+    [HttpGet("by-municipality/{municipalityId:int}")]
+    [Authorize(Roles = "Admin,Moderator,Municipality")]
+    public async Task<IActionResult> GetByMunicipality(int municipalityId, [FromQuery] int page = 1, [FromQuery] int pageSize = 20)
+    {
+        var result = await _mediator.Send(new GetByMunicipalityQuery
+        {
+            MunicipalityId = municipalityId,
+            Page = page,
+            PageSize = pageSize
+        });
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Update incident status (Admin/Moderator/Municipality only)
     /// </summary>
     [HttpPatch("{id:guid}/status")]
-    [Authorize(Roles = "Admin,Moderator")]
+    [Authorize(Roles = "Admin,Moderator,Municipality")]
     public async Task<IActionResult> UpdateStatus(Guid id, [FromBody] UpdateIncidentStatusCommand command)
     {
         command.IncidentId = id;
