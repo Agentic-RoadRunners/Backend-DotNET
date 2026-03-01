@@ -15,4 +15,5 @@ public interface IIncidentRepository : IGenericRepository<Incident>
     Task<Incident?> GetWithDetailsAsync(Guid id);
 
     Task<IEnumerable<Incident>> GetAlongRouteAsync(NetTopologySuite.Geometries.LineString route, int bufferMeters = 500);
+    Task<IReadOnlyList<Incident>> GetByMunicipalityPaginatedAsync(int municipalityId, int page, int pageSize);
 }
