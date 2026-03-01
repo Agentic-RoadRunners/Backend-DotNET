@@ -17,7 +17,8 @@ public static class MunicipalitySeedData
             new Municipality { Id = 7, Name = "Serik Municipality" },
             new Municipality { Id = 8, Name = "Döşemealtı Municipality" },
             new Municipality { Id = 9, Name = "Aksu Municipality" },
-            new Municipality { Id = 10, Name = "Gazipaşa Municipality" }
+            new Municipality { Id = 10, Name = "Gazipaşa Municipality" },
+            new Municipality { Id = 11, Name = "Hatay Belediyesi" }
         );
     }
 }

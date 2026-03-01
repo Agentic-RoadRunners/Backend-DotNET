@@ -13,6 +13,7 @@ public static class UserSeedData
     public static readonly Guid JohnDoeId = new Guid("a1a1a1a1-0000-0000-0000-000000000003");
     public static readonly Guid JaneSmithId = new Guid("a1a1a1a1-0000-0000-0000-000000000004");
     public static readonly Guid MunOfficerId = new Guid("a1a1a1a1-0000-0000-0000-000000000005");
+    public static readonly Guid HatayMunId = new Guid("a1a1a1a1-0000-0000-0000-000000000006");
 
     public static void Seed(ModelBuilder modelBuilder)
     {
@@ -59,6 +60,15 @@ public static class UserSeedData
                 FullName = "Kepez Municipality Officer",
                 Email = "officer@kepez.bel.tr",
                 PasswordHash = "$2a$11$5J9R2E3V6vFmK1hL4nQ7aeZVd4gCpO7RuFn9XbQ1ImK5tW2yEoMns", // Mun@123!
+                Status = UserStatus.Active,
+                CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, DateTimeKind.Utc)
+            },
+            new User
+            {
+                Id = HatayMunId,
+                FullName = "Hatay Belediyesi",
+                Email = "hatay@belediye.gov.tr",
+                PasswordHash = "$2a$11$DsWH6jqqsre2kV4MTomJZe6Q4/TkI0PJbaCitjjxC3QXKZzxJqaKK", // 123456
                 Status = UserStatus.Active,
                 CreatedAt = new DateTime(2025, 1, 1, 0, 0, 0, DateTimeKind.Utc)
             }

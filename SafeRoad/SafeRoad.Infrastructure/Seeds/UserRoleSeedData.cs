@@ -12,7 +12,8 @@ public static class UserRoleSeedData
             new UserRole { UserId = UserSeedData.ModeratorId, RoleId = 2 },  // Moderator
             new UserRole { UserId = UserSeedData.JohnDoeId, RoleId = 1 },  // User
             new UserRole { UserId = UserSeedData.JaneSmithId, RoleId = 1 },  // User
-            new UserRole { UserId = UserSeedData.MunOfficerId, RoleId = 4 }   // Municipality
+            new UserRole { UserId = UserSeedData.MunOfficerId, RoleId = 4 },  // Municipality
+            new UserRole { UserId = UserSeedData.HatayMunId, RoleId = 4 }     // Municipality
         );
     }
 }
