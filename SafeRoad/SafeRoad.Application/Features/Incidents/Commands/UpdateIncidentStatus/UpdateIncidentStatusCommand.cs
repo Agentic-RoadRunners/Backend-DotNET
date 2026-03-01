@@ -1,7 +1,6 @@
 
 using System.Text.Json.Serialization;
 using MediatR;
-using SafeRoad.Core.Enums;
 using SafeRoad.Core.Wrappers;
 
 namespace SafeRoad.Core.Features.Incidents.Commands.UpdateIncidentStatus;
@@ -13,5 +12,9 @@ public class UpdateIncidentStatusCommand : IRequest<ApiResponse<string>>
     /// </summary>
     [JsonIgnore]
     public Guid IncidentId { get; set; }
-    public IncidentStatus NewStatus { get; set; }
+
+    /// <summary>
+    /// Status name as string (e.g. "Pending", "Verified", "Disputed", "Resolved").
+    /// </summary>
+    public string NewStatus { get; set; } = null!;
 }
