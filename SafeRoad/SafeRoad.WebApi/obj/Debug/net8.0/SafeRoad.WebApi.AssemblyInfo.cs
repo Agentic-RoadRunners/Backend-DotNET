@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("codewithmukesh")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0+bc463775aaf324e21492501d71cc4acecf8cdb7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0+ec2a54157ced6c724e2857388c5dab129151941a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SafeRoad.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SafeRoad.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]
