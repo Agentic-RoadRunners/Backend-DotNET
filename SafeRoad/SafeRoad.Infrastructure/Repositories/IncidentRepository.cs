@@ -89,4 +89,20 @@ public class IncidentRepository : GenericRepository<Incident>, IIncidentReposito
             .Take(50)
             .ToListAsync();
     }
+
+    public async Task<IReadOnlyList<Incident>> GetByMunicipalityPaginatedAsync(int municipalityId, int page, int pageSize)
+    {
+        return await _dbSet
+            .Where(i => i.MunicipalityId == municipalityId)
+            .OrderByDescending(i => i.CreatedAt)
+            .Skip((page - 1) * pageSize)
+            .Take(pageSize)
+            .Include(i => i.Category)
+            .Include(i => i.Reporter)
+            .Include(i => i.Municipality)
+            .Include(i => i.Photos)
+            .Include(i => i.Verifications)
+            .Include(i => i.Comments)
+            .ToListAsync();
+    }
 }
