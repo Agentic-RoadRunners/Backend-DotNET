@@ -4,6 +4,41 @@
         <name>SafeRoad.WebApi</name>
     </assembly>
     <members>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.GetAllUsers(System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Get all users with pagination and filtering (Admin only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.BanUser(System.Guid)">
+            <summary>
+            Ban a user (Admin only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.UnbanUser(System.Guid)">
+            <summary>
+            Unban a user (Admin only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.UpdateUser(System.Guid,SafeRoad.Core.DTOs.User.UpdateUserByAdminRequest)">
+            <summary>
+            Update a user (Admin only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.UpdateIncident(System.Guid,SafeRoad.Core.DTOs.Incident.AdminIncidentUpdateRequest)">
+            <summary>
+            Update an incident (Admin only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.DeleteIncident(System.Guid)">
+            <summary>
+            Delete an incident (Admin only)
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AdminController.GetAllIncidents(System.Int32,System.Int32)">
+            <summary>
+            Get all incidents for admin management (Admin only)
+            </summary>
+        </member>
         <member name="T:SafeRoad.WebApi.Controllers.AnalyticsController">
             <summary>
             Platform-wide analytics and statistics
@@ -13,8 +48,16 @@
             <summary>
             Get platform-wide overview statistics
             </summary>
-            <returns>Total incidents, total users, resolved count, municipality count</returns>
-            <response code="200">Returns the analytics overview</response>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AnalyticsController.GetCategoryStats">
+            <summary>
+            Get incident count per category
+            </summary>
+        </member>
+        <member name="M:SafeRoad.WebApi.Controllers.AnalyticsController.GetTrends(System.Int32)">
+            <summary>
+            Get incident trend data over the last N days
+            </summary>
         </member>
         <member name="T:SafeRoad.WebApi.Controllers.AuthController">
             <summary>
@@ -130,9 +173,14 @@
             Get incidents reported by the authenticated user
             </summary>
         </member>
+        <member name="M:SafeRoad.WebApi.Controllers.IncidentController.GetByMunicipality(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get incidents by municipality
+            </summary>
+        </member>
         <member name="M:SafeRoad.WebApi.Controllers.IncidentController.UpdateStatus(System.Guid,SafeRoad.Core.Features.Incidents.Commands.UpdateIncidentStatus.UpdateIncidentStatusCommand)">
             <summary>
-            Update incident status (Admin/Moderator only)
+            Update incident status (Admin/Moderator/Municipality only)
             </summary>
         </member>
         <member name="M:SafeRoad.WebApi.Controllers.IncidentController.Delete(System.Guid)">
