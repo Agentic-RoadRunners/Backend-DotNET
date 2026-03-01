@@ -1,6 +1,8 @@
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using SafeRoad.Core.Features.Analytics.Queries.GetAnalyticsOverview;
+using SafeRoad.Core.Features.Analytics.Queries.GetCategoryStats;
+using SafeRoad.Core.Features.Analytics.Queries.GetTrendData;
 
 namespace SafeRoad.WebApi.Controllers;
 
@@ -22,13 +24,33 @@ public class AnalyticsController : ControllerBase
     /// <summary>
     /// Get platform-wide overview statistics
     /// </summary>
-    /// <returns>Total incidents, total users, resolved count, municipality count</returns>
-    /// <response code="200">Returns the analytics overview</response>
     [HttpGet("overview")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<IActionResult> GetOverview()
     {
         var result = await _mediator.Send(new GetAnalyticsOverviewQuery());
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Get incident count per category
+    /// </summary>
+    [HttpGet("categories")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetCategoryStats()
+    {
+        var result = await _mediator.Send(new GetCategoryStatsQuery());
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Get incident trend data over the last N days
+    /// </summary>
+    [HttpGet("trends")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public async Task<IActionResult> GetTrends([FromQuery] int days = 30)
+    {
+        var result = await _mediator.Send(new GetTrendDataQuery { Days = days });
         return Ok(result);
     }
 }
