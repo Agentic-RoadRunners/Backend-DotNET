@@ -27,9 +27,13 @@ public class StartJourneyCommandHandler : IRequestHandler<StartJourneyCommand, A
 
     public async Task<ApiResponse<StartJourneyResponse>> Handle(StartJourneyCommand request, CancellationToken cancellationToken)
     {
+        // Auto-complete any stale active journey so the user can start a fresh one
         var activeJourney = await _journeyRepository.GetActiveByUserIdAsync(request.UserId);
         if (activeJourney != null)
-            throw new BadRequestException("You already have an active journey. End it before starting a new one.");
+        {
+            activeJourney.Status = JourneyStatus.Completed;
+            await _journeyRepository.UpdateAsync(activeJourney);
+        }
 
         var routeResult = await _routingService.GetRouteAsync(
             request.StartLatitude, request.StartLongitude,
