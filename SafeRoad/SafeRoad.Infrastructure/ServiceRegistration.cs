@@ -14,7 +14,12 @@ public static class ServiceRegistration
         services.AddDbContext<SafeRoadDbContext>(options =>
             options.UseNpgsql(
                 configuration.GetConnectionString("DefaultConnection"),
-                x => x.UseNetTopologySuite()));
+                x =>
+                {
+                    x.UseNetTopologySuite();
+                    x.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
+                    x.CommandTimeout(60);
+                }));
 
         // Repositories
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
