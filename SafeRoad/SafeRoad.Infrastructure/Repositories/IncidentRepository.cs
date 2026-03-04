@@ -26,6 +26,7 @@ public class IncidentRepository : GenericRepository<Incident>, IIncidentReposito
             .Include(i => i.Photos)
             .Include(i => i.Verifications)
             .Include(i => i.Comments)
+            .AsSplitQuery()
             .ToListAsync();
     }
 
@@ -75,6 +76,7 @@ public class IncidentRepository : GenericRepository<Incident>, IIncidentReposito
             .Include(i => i.Photos)
             .Include(i => i.Comments)
             .Include(i => i.Verifications)
+            .AsSplitQuery()
             .FirstOrDefaultAsync(i => i.Id == id);
     }
 
@@ -103,6 +105,7 @@ public class IncidentRepository : GenericRepository<Incident>, IIncidentReposito
             .Include(i => i.Photos)
             .Include(i => i.Verifications)
             .Include(i => i.Comments)
+            .AsSplitQuery()
             .ToListAsync();
     }
 }
