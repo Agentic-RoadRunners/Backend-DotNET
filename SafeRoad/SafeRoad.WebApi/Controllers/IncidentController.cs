@@ -126,7 +126,7 @@ public class IncidentController : ControllerBase
     /// Get incidents by municipality
     /// </summary>
     [HttpGet("by-municipality/{municipalityId:int}")]
-    [Authorize(Roles = "Admin,Moderator,Municipality")]
+    [Authorize(Roles = "Admin,Municipality")]
     public async Task<IActionResult> GetByMunicipality(int municipalityId, [FromQuery] int page = 1, [FromQuery] int pageSize = 20)
     {
         var result = await _mediator.Send(new GetByMunicipalityQuery
@@ -139,10 +139,10 @@ public class IncidentController : ControllerBase
     }
 
     /// <summary>
-    /// Update incident status (Admin/Moderator/Municipality only)
+    /// Update incident status (Admin/Municipality only)
     /// </summary>
     [HttpPatch("{id:guid}/status")]
-    [Authorize(Roles = "Admin,Moderator,Municipality")]
+    [Authorize(Roles = "Admin,Municipality")]
     public async Task<IActionResult> UpdateStatus(Guid id, [FromBody] UpdateIncidentStatusCommand command)
     {
         command.IncidentId = id;
