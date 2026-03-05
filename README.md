@@ -114,7 +114,7 @@ The application listens on the following addresses by default:
 | Entity | Description | Spatial Type |
 |---|---|---|
 | **User** | User account (email, password hash, trust score, avatar) | — |
-| **Role** | Role definition (User, Moderator, Admin, Municipality) | — |
+| **Role** | Role definition (User, Admin, Municipality) | — |
 | **UserRole** | User-Role join table (multi-role support) | — |
 | **Incident** | Traffic incident report (title, description, location, status) | `Point` |
 | **IncidentCategory** | Incident category (Pothole, Accident, etc.) | — |
@@ -146,7 +146,6 @@ The application listens on the following addresses by default:
 | Id | Role | Permissions |
 |---|---|---|
 | 1 | **User** | Report incidents, comment, verify, journey, watched areas |
-| 2 | **Moderator** | User + update incident status |
 | 3 | **Admin** | All permissions (user management, ban/unban, incident CRUD) |
 | 4 | **Municipality** | User + view/update incidents assigned to their municipality |
 
@@ -176,8 +175,8 @@ Users can have **multiple roles** (`UserRole` join table).
 | GET | `/api/incidents/nearby` | Get nearby incidents (lat, lng, radius) | — |
 | GET | `/api/incidents/{id}` | Get incident details | — |
 | GET | `/api/incidents/my` | Get my incidents | `Authorize` |
-| GET | `/api/incidents/by-municipality/{id}` | Get incidents by municipality | `Admin, Moderator, Municipality` |
-| PATCH | `/api/incidents/{id}/status` | Update incident status | `Admin, Moderator, Municipality` |
+| GET | `/api/incidents/by-municipality/{id}` | Get incidents by municipality | `Admin, Municipality` |
+| PATCH | `/api/incidents/{id}/status` | Update incident status | `Admin, Municipality` |
 | DELETE | `/api/incidents/{id}` | Delete incident (owner only) | `Authorize` |
 
 ### Comments — `api/incidents/{incidentId}/comments`
@@ -309,10 +308,10 @@ When a journey is started, a real road route is calculated via the [OSRM](http:/
 
 | Seed | Content |
 |---|---|
-| **Roles** | User, Moderator, Admin, Municipality |
+| **Roles** | User, Admin, Municipality |
 | **Municipalities** | 11 municipalities (Antalya, Kepez, Hatay, etc.) |
 | **Incident Categories** | Pothole, Accident, Flood, etc. |
-| **Users** | Admin, Moderator, 2 Users, 2 Municipality Officers |
+| **Users** | Admin, 2 Users, 2 Municipality Officers |
 | **Incidents** | Sample incidents (location, category, photos) |
 | **Comments** | Sample comments |
 | **Verifications** | Sample vote data |
@@ -322,7 +321,6 @@ When a journey is started, a real road route is calculated via the [OSRM](http:/
 | Account | Email | Password | Role |
 |---|---|---|---|
 | Admin | `admin@saferoad.com` | `Admin@123!` | Admin |
-| Moderator | `moderator@antalya.bel.tr` | `Mod@123!` | Moderator |
 | User 1 | `john.doe@gmail.com` | `User@123!` | User |
 | User 2 | `jane.smith@gmail.com` | `User@123!` | User |
 | Municipality | `officer@kepez.bel.tr` | `Mun@123!` | Municipality |
