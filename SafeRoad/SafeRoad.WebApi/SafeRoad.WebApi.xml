@@ -180,7 +180,7 @@
         </member>
         <member name="M:SafeRoad.WebApi.Controllers.IncidentController.UpdateStatus(System.Guid,SafeRoad.Core.Features.Incidents.Commands.UpdateIncidentStatus.UpdateIncidentStatusCommand)">
             <summary>
-            Update incident status (Admin/Moderator/Municipality only)
+            Update incident status (Admin/Municipality only)
             </summary>
         </member>
         <member name="M:SafeRoad.WebApi.Controllers.IncidentController.Delete(System.Guid)">
