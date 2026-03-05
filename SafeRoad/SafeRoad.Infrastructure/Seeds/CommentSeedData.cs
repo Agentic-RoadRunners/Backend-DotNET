@@ -22,7 +22,7 @@ public static class CommentSeedData
                 Id = 2,
                 Content = "Municipality team is on the way to fix this.",
                 IncidentId = IncidentSeedData.Incident1Id,
-                UserId = UserSeedData.ModeratorId,
+                UserId = UserSeedData.MunOfficerId,
                 CreatedAt = new DateTime(2025, 1, 12, 11, 0, 0, DateTimeKind.Utc)
             },
             new Comment
