@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DepbM212MLs=",
+  "dgSpecHash": "RVbTNq+9uGY=",
   "success": true,
   "projectFilePath": "/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Infrastructure/SafeRoad.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -131,18 +131,14 @@
     "/Users/altugikiz/.nuget/packages/system.threading/4.3.0/system.threading.4.3.0.nupkg.sha512",
     "/Users/altugikiz/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
     "/Users/altugikiz/.nuget/packages/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg.sha512",
-    "/Users/altugikiz/.nuget/packages/system.threading.threadpool/4.3.0/system.threading.threadpool.4.3.0.nupkg.sha512",
-    "/Users/altugikiz/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
-    "/Users/altugikiz/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+    "/Users/altugikiz/.nuget/packages/system.threading.threadpool/4.3.0/system.threading.threadpool.4.3.0.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1902",
       "level": "Warning",
-      "message": "Package 'MimeKit' 2.9.1 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g7hc-96xr-gvvx",
-      "projectPath": "/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Infrastructure/SafeRoad.Infrastructure.csproj",
       "warningLevel": 1,
-      "filePath": "/Users/altugikiz/Documents/GitHub/agentic-RoadRunners/SafeRoad-backend/SafeRoad/SafeRoad.Infrastructure/SafeRoad.Infrastructure.csproj",
+      "message": "'MimeKit' 2.9.1 paketinde önem derecesi orta olan bilinen bir https://github.com/advisories/GHSA-g7hc-96xr-gvvx güvenlik açığı var",
       "libraryId": "MimeKit",
       "targetGraphs": [
         "net8.0"
