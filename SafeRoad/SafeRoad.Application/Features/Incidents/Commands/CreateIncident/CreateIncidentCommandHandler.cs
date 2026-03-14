@@ -5,6 +5,7 @@ using SafeRoad.Core.DTOs.Incident;
 using SafeRoad.Core.Entities;
 using SafeRoad.Core.Enums;
 using SafeRoad.Core.Interfaces.Repositories;
+using SafeRoad.Core.Interfaces.Services;
 using SafeRoad.Core.Wrappers;
 
 namespace SafeRoad.Core.Features.Incidents.Commands.CreateIncident;
@@ -12,10 +13,14 @@ namespace SafeRoad.Core.Features.Incidents.Commands.CreateIncident;
 public class CreateIncidentCommandHandler : IRequestHandler<CreateIncidentCommand, ApiResponse<IncidentResponse>>
 {
     private readonly IIncidentRepository _incidentRepository;
+    private readonly ICrewAnalysisService _crewAnalysisService;
 
-    public CreateIncidentCommandHandler(IIncidentRepository incidentRepository)
+    public CreateIncidentCommandHandler(
+        IIncidentRepository incidentRepository,
+        ICrewAnalysisService crewAnalysisService)
     {
         _incidentRepository = incidentRepository;
+        _crewAnalysisService = crewAnalysisService;
     }
 
     public async Task<ApiResponse<IncidentResponse>> Handle(CreateIncidentCommand request, CancellationToken cancellationToken)
@@ -34,6 +39,17 @@ public class CreateIncidentCommandHandler : IRequestHandler<CreateIncidentComman
         };
 
         await _incidentRepository.AddAsync(incident);
+
+        // Fire-and-forget: CrewAI KG enrichment arka planda başlar, kullanıcı beklemez.
+        _ = _crewAnalysisService.NotifyIncidentCreatedAsync(
+            incidentId:  incident.Id,
+            title:       incident.Title,
+            description: incident.Description,
+            category:    incident.CategoryId.ToString(),
+            latitude:    request.Latitude,
+            longitude:   request.Longitude,
+            status:      incident.Status.ToString()
+        );
 
         var response = new IncidentResponse
         {
