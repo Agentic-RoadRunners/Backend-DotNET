@@ -34,6 +34,7 @@ public static class ServiceRegistration
         // Services
         services.AddScoped<ITokenService, TokenService>();
         services.AddHttpClient<IRoutingService, OsrmRoutingService>();
+        services.AddHttpClient<ICrewAnalysisService, CrewAnalysisService>();
 
         // Supabase Storage
         services.Configure<SupabaseStorageSettings>(configuration.GetSection("SupabaseStorage"));
