@@ -1,4 +1,5 @@
 ﻿
+using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -34,7 +35,10 @@ public static class ServiceRegistration
         // Services
         services.AddScoped<ITokenService, TokenService>();
         services.AddHttpClient<IRoutingService, OsrmRoutingService>();
-        services.AddHttpClient<ICrewAnalysisService, CrewAnalysisService>();
+        services.AddHttpClient<ICrewAnalysisService, CrewAnalysisService>(client =>
+        {
+            client.Timeout = TimeSpan.FromSeconds(10);
+        });
 
         // Supabase Storage
         services.Configure<SupabaseStorageSettings>(configuration.GetSection("SupabaseStorage"));
