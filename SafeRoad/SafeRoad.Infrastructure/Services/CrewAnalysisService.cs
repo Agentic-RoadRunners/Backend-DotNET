@@ -45,7 +45,13 @@ public class CrewAnalysisService : ICrewAnalysisService
 
         // Fire-and-forget: Task kasıtlı olarak beklenmez.
         // FastAPI anında 202 döndürür; crew arka planda çalışır.
-        _ = _httpClient.PostAsJsonAsync(FastApiAnalyzeUrl, payload);
+        // Exception yakalanıp loglanır — unobserved task exception olarak kaybolmaz.
+        _ = _httpClient.PostAsJsonAsync(FastApiAnalyzeUrl, payload)
+            .ContinueWith(
+                t => _logger.LogWarning(
+                    t.Exception,
+                    "CrewAI KG enrichment başarısız: IncidentId={IncidentId}", incidentId),
+                TaskContinuationOptions.OnlyOnFaulted);
 
         _logger.LogInformation(
             "CrewAI KG enrichment tetiklendi: IncidentId={IncidentId}", incidentId);
